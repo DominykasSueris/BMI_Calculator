@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Body Mass Index</title>
+</head>
+
+<body>
+    <div id="calculator" class="rounded border border-light">
+        <h1 class="fs-2">Body mass Calculator</h1>
+        <form for="weight" class="fs-5 font-monospace">
+            <label for="weight">Weight(kg)</label>
+            <input type="text" id="person-height" name="weight">
+        </form>
+
+        <form for="height" class="fs-5 font-monospace">
+            <label for="height">Height(cm)</label>
+            <input type="text" id="person-weight" name="height">
+        </form>
+        <form for="bmi" class="fs-5 font-monospace">
+            <label for="bmi">BMI</label>
+            <input type="text" id="bmi" name="bmi">
+        </form>
+
+        <form for="bmi-result" class="fs-5 font-monospace">
+            <label for="bmi-result">Result</label>
+            <input type="text" id="result" name="bmi-result">
+        </form>
+
+        <div id="blue-button">
+            <button type="submit" id="submit-button" class="btn btn-primary">Submit your answer </button>
+        </div>
+        <div id="red-button">
+            <button id="reset-button" type="button" class="btn btn-danger">Reset</button>
+        </div>
+
+    </div>
+    <script src="bodymass.js"></script>
+</body>
+
+</html>
